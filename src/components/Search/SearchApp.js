@@ -3,11 +3,7 @@ import ReactDOM from 'react-dom'
 import 'whatwg-fetch'
 import { Search } from './Search'
 import VenueList from './VenueList'
-
-
-
-
-
+import Hero from '../../hero.jpg'
 
 
 class SearchApp extends Component {
@@ -19,8 +15,6 @@ class SearchApp extends Component {
     this.state = {
       venues: []
     };
-    
-    
   }
 
   componentDidMount() {
@@ -71,9 +65,18 @@ class SearchApp extends Component {
     // var venueList = this.state.venues.map((item, i) =>
       // <Venues key={i} name={item.venue.name} />
     // );
-  
+
+    let sectionStyle = {
+      backgroundImage: `url(${Hero})`,
+      height: '60vh',
+      backgroundSize: 'cover',
+      paddingTop: '100px',
+      marginBottom: '40px',
+      borderRadius: '5px'
+    };
+
     return (
-      <div className='wrapper'>
+      <div className='wrapper' style={ sectionStyle }>
           <h1>LIVE YOUR BEST LIFE</h1>
         <div>
           <Search onSubmit={(value)=>this.handleSubmit(value)} path='/'/>
