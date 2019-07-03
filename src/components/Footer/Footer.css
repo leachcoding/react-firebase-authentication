@@ -1,0 +1,55 @@
+.Footer {
+  text-align: center;
+  
+}
+
+.App-footer {
+  background-color: #da4237;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.Footer-link {
+  color: #f1f1f1;
+  background: transparent;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  transition: all .2s ease;
+}
+
+.Footer-link:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.Footer-nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+.Logo {
+  height: 6vh;
+  width: auto;
+}
+
+@keyframes grow-in {
+  from {
+    transform: scale(.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
