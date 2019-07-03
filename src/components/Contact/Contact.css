@@ -11,7 +11,7 @@
   content: '';
   width: 100vw;
   height: 100vw;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
@@ -23,6 +23,10 @@
   height: 70%;
   padding: 3% 0;
   background: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
