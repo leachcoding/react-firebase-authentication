@@ -1,0 +1,114 @@
+.Form-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Form-container::before {
+  content: '';
+  width: 100vw;
+  height: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, .6);
+}
+
+.form {
+  width: 60%;
+  height: 70%;
+  padding: 3% 0;
+  background: white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 1rem 1rem rgba(0,0,0,.3);
+  animation: grow-in .4s ease alternate;
+}
+
+.form > * {
+  margin: 1% 0;
+}
+
+.form h1 {
+  font-weight: 300;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  width: 30vw;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, .3);
+}
+
+.form input[type="text"]:focus,
+.form input[type="text"]:active,
+.form input[type="email"]:focus,
+.form input[type="email"]:active,
+.form textarea:focus,
+.form textarea:active {
+  outline: none;
+  border: 1px solid #da4237;
+}
+
+
+.form input[placeholder],
+.form textarea[placeholder] {
+  padding-left: 10px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 600;
+  opacity: .6;
+}
+
+.form textarea {
+  height: 30vh;
+}
+
+.form input[type="submit"] {
+  width: 20%;
+  border: none;
+  padding: 1% 2%;
+  background: #da4237;
+  border-radius: 10px;
+  color: #f1f1f1;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);
+  transition: all .2s ease;
+}
+
+.form input[type="submit"]:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, .3);
+  cursor: pointer;
+}
+
+.form input[type="submit"]:active {
+  transform: translateY(-1px) scale(1.01);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, .3);
+}
+
+.form input[type="submit"]:focus {
+  outline: none;
+}
+
+@keyframes grow-in {
+  from {
+    transform: scale(.5);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
