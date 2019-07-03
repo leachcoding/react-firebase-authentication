@@ -1,9 +1,22 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import About from '../About/About';
+import Contact from '../Contact/Contact';
+import FooterItem from '../Footer/Footer';
+import SearchApp from '../Search/SearchApp';
 
 const Landing = () => (
-  <div>
-    <h1>Landing</h1>
+  <Router>
+   <div>
+   <Route path="/"  component={SearchApp} />
+      <Switch>
+
+        <Route path="/" exact component={About} /> 
+        <Route path="/contact" component={Contact} />
+      </Switch>
+      <FooterItem />
   </div>
+  </Router>
 );
 
 export default Landing;

@@ -1,0 +1,295 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* General Styling */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 62.5%;
+  line-height: 1.8;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* About LYBL Component */
+h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-left: 4rem;
+  text-align: center;
+  border: 2px solid black;
+  width: 25%;
+}
+
+h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 1.4rem;
+  margin: 0 auto;
+}
+
+hr {
+  width:  50%;
+  border-top: 4px solid black;
+}
+
+/* About Section */
+.about-section {
+  width: 100%;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.about-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1% 4%;
+}
+
+/* Start of the Meet the Team Section */
+.meet-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.meet-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.meet-bottom {
+  display: flex;
+  flex: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 15px 0;
+}
+
+/* Styling for the cards */
+.meet-card {
+  width: 28%;
+  height: 325px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-shadow: 5px 0 5px #979797;
+}
+
+.meet-card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-container {
+  width: 100%;
+  height: 60%;
+  padding: 2% 1% 0 2%;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.card-text {
+  width: 100%;
+  height: 40%;
+  text-align: center;
+}
+
+/* Font Awesome Icons */
+.fa {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.fa-icon {
+  margin: 0 10px;
+  cursor: pointer;
+  color: black;
+}
+
+.fa-icon:hover {
+  transform: scale(1.05);
+}
+
+.wrapper {
+  background-image: url('https://files.slack.com/files-pri/T4JUEB3ME-FKX2FDKED/hero.jpg');
+  height: 60vh;
+  background-size: cover;
+  padding-top: 100px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+}
+
+.wrapper h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 7rem;
+  font-weight: 900;
+  color: white;
+}
+
+.mainDiv {
+  margin: 0 auto;
+  text-align: center;
+  height: 100px;
+  width: 60%;
+  background:rgba(255,255,255, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchForm {
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+/* margin-top: 300px; */
+}
+
+
+
+#venueType {
+width: 300px;
+height: 50px;
+border: none;
+border-bottom: 1px solid white;
+color: white;
+margin-left: 20px;
+font-size: 1.5rem;
+background: transparent;
+}
+
+#venueType:active {
+color: white;
+background-color: transparent;
+}
+
+#venueType:focus {
+background: transparent;
+}
+
+
+::placeholder {
+color: white;
+}
+
+.searchButton {
+height: 100px;
+width: 100px;
+margin-right: 20px;
+border: none;
+border-left: 1px solid white;
+background-color: transparent;
+color: white;
+cursor: pointer;
+font-size: 1.5rem;
+}
+
+.venue-list{
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin-top: 20px;
+
+}
+
+.venue {
+text-decoration: none;
+list-style-type: none;
+color: black;
+background: rgba(255,255,255, 0.6);
+font-size: 1.5rem;
+margin-top: 20px;
+border: 1px solid rgb(214, 210, 210);
+border-radius: .5rem;
+padding: 1rem;
+margin: 1em;
+box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.5);
+}
+
+.venue a {
+text-decoration: none;
+color: black;
+}
+
+.venue p {
+font-size: 1.3rem;
+}
