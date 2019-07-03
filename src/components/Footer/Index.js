@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import './index.css';
 import FooterIndex from './Footer';
-import { renderComponent } from 'recompose';
-
-class FooterIndex extends Component {
+class Footer extends Component {
   render() {
     return (
       <FooterIndex />
@@ -12,4 +9,4 @@ class FooterIndex extends Component {
   }
 }
 
-export default FooterIndex
+export default Footer

@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -36,11 +36,13 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
+  margin-right: 10%;
 }
 
 .Logo {
   height: 6vh;
   width: auto;
+  margin-left: 10%;
 }
 
 @keyframes grow-in {
