@@ -187,7 +187,7 @@ hr {
 }
 
 .wrapper {
-  background-image: url('https://files.slack.com/files-pri/T4JUEB3ME-FKX2FDKED/hero.jpg');
+  background-image: url("../../hero.jpg") no-repeat;
   height: 60vh;
   background-size: cover;
   padding-top: 100px;
