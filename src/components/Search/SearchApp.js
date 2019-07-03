@@ -66,7 +66,7 @@ class SearchApp extends Component {
       // <Venues key={i} name={item.venue.name} />
     // );
 
-    var sectionStyle = {
+    let sectionStyle = {
       backgroundImage: `url(${Hero})`,
       height: '60vh',
       backgroundSize: 'cover',
