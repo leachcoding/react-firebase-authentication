@@ -1,5 +1,5 @@
 import React from 'react';
-import About from './components/About';
+import About from '../About/About';
 import FooterIndex from './Footer';
 import Contact from './Contact';
 import SearchApp from '../Search/SearchApp';
@@ -12,14 +12,13 @@ class App extends React.Component {
       <div>
         <Router>
           
-
         {/* The rendering of the About Component */}
           <Switch>
-            <Route path='/' component={SearchApp} />
-            <Route path="/" exact component={About} />
+            <Route path='/' component={SearchApp} /> */}
+            <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
           </Switch>
-          <FooterIndex />
+           <FooterIndex />
         </Router>
       </div>
     )
