@@ -11,10 +11,10 @@ const Landing = () => (
    <Route path="/"  component={SearchApp} />
       <Switch>
 
-        <Route path="/" exact component={About} /> 
+        <Route path="/about"  component={About} /> 
         <Route path="/contact" component={Contact} />
       </Switch>
-      <FooterItem />
+    <FooterItem />
   </div>
   </Router>
 );
