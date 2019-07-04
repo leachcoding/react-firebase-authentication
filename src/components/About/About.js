@@ -7,12 +7,12 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 // Image for the Meet Us cards.
-import Aaron from '../../Aaron.png';
-import Carl from '../../Carl.png';
-import Clif from '../../Clif.png';
-import Jay from '../../Jay.png';
-import Nick from '../../Nick.png';
-import Robert from '../../Robert.png';
+import Aaron from './images/Aaron.png';
+import Carl from './images/Carl.png';
+import Clif from './images/Clif.png';
+import Jay from './images/Jay.png';
+import Nick from './images/Nick.png';
+import Robert from './images/Robert.png';
 
 function About () {
   return (
