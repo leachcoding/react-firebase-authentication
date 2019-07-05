@@ -57,7 +57,7 @@ html, body {
   margin: 0 auto;
   font-size: 62.5%;
   line-height: 1.8;
-  font-family: 'Quicksand', sans-serif;
+  font-family: helvetica,'Quicksand', sans-serif;
 }
 
 /* About LYBL Component */
@@ -188,18 +188,19 @@ hr {
 
 .wrapper {
   background-image: url('https://files.slack.com/files-pri/T4JUEB3ME-FKX2FDKED/hero.jpg');
-  height: 60vh;
+  height: 65vh;
   background-size: cover;
-  padding-top: 100px;
-  margin-bottom: 40px;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .wrapper h1 {
   text-align: center;
-  margin-bottom: 10px;
-  font-size: 7rem;
-  font-weight: 900;
+  /* margin-bottom: 10px; */
+  font-size: 5rem;
+  font-weight: 800;
   color: white;
 }
 
@@ -208,18 +209,20 @@ hr {
   text-align: center;
   height: 100px;
   width: 60%;
-  background:rgba(255,255,255, 0.4);
+  background:rgba(255,255,255, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 2em;
 }
 
 .searchForm {
 display: flex;
 justify-content: space-between;
 align-items: center;
-
+background:rgba(255, 255, 255, 0.2);
 /* margin-top: 300px; */
+/* border: 1px solid red; */
 }
 
 
@@ -232,12 +235,14 @@ border-bottom: 1px solid white;
 color: white;
 margin-left: 20px;
 font-size: 1.5rem;
-background: transparent;
+background: transparent !important;
+/* background:rgba(255, 255, 255, 0.1); */
 }
 
 #venueType:active {
 color: white;
-background-color: transparent;
+background-color: transparent !important;
+/* background:rgba(255, 255, 255, 0.1); */
 }
 
 #venueType:focus {
