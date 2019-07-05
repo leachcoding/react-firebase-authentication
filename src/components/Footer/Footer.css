@@ -1,6 +1,8 @@
 .Footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   text-align: center;
-  
 }
 
 .App-footer {
@@ -17,7 +19,7 @@
 
 .Footer-link {
   color: #f1f1f1;
-  background: transparent;
+  background: #da4237;
   padding: 0;
   border: none;
   text-decoration: none;
@@ -28,8 +30,10 @@
 }
 
 .Footer-link:hover {
-  color: black;
-  border-bottom: 1px solid black;
+  color: #da4237;
+  background: #f1f1f1;
+  border: 1px solid #da4237;
+  padding: .25rem 1rem;
 }
 
 .Footer-nav {

@@ -73,16 +73,13 @@ class SearchApp extends Component {
     // );
   
     return (
+      <div>
       <div className='wrapper'>
           <h1>LIVE YOUR BEST LIFE</h1>
-        <div>
           <Search onSubmit={(value)=>this.handleSubmit(value)} path='/'/>
-        </div>
-        <div>
-          <VenueList venues={this.state.venues} path='/'/>
-        </div>
       </div>
-      
+     <VenueList venues={this.state.venues}path='/'/>
+      </div>
     );
   }
 }
